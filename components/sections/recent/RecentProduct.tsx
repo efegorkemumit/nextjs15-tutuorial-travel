@@ -54,27 +54,27 @@ const RecentProduct = () => {
                                             className="w-full h-48 object-cover rounded-t-lg"
                                         />
                                         {pkg.discount && (
-                                            <Badge 
-                                            className='absolute top-4 left-4 bg-blue-500
+                                            <Badge
+                                                className='absolute top-4 left-4 bg-blue-500
                                              text-white text-sm px-2 hover:bg-blue-600'>
                                                 {pkg.discount}
                                             </Badge>
-                                            
+
                                         )}
                                     </CardHeader>
                                     <CardContent className='p-4'>
                                         <CardTitle className='text-xl h-[120px]'>   {pkg.title}</CardTitle>
                                         <CardDescription className='flex items-center text-sm text-gray-500 mt-2'>
-                                            <MapPin className='w--4 h-4 mr-2'/> {pkg.location}
+                                            <MapPin className='w--4 h-4 mr-2' /> {pkg.location}
                                         </CardDescription>
                                         <CardDescription className='flex items-center text-sm text-gray-500 mt-2'>
-                                            <Clock className='w--4 h-4 mr-2'/> {pkg.duration}
+                                            <Clock className='w--4 h-4 mr-2' /> {pkg.duration}
                                         </CardDescription>
                                         <div className='flex justify-between items-center mt-4'>
                                             <div>
                                                 <span className='text-orange-500 font-bold text-xl'>{pkg.price}</span>
-                                                {pkg.oldPrice &&(
-                                                      <span className='text-gray-400 line-through ml-2'>{pkg.oldPrice}</span>
+                                                {pkg.oldPrice && (
+                                                    <span className='text-gray-400 line-through ml-2'>{pkg.oldPrice}</span>
                                                 )}
                                             </div>
 
@@ -95,8 +95,9 @@ const RecentProduct = () => {
 
 
                 </CarouselContent>
-                <CarouselPrevious className='left-0' />
-                <CarouselNext className='right-0' />
+                <CarouselPrevious className="left-0    bg-orange-500 hover:bg-orange-600 hover:text-white text-white py-6 px-6" />
+                <CarouselNext className="right-0  bg-orange-500 hover:bg-orange-600 hover:text-white text-white py-6 px-6" />
+
             </Carousel>
         </div>
     )
