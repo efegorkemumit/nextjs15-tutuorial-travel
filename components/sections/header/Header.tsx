@@ -2,6 +2,8 @@ import { Facebook, Instagram, Menu, MessageCircle, Phone, Search, Twitter, User 
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import MobileMenu from './MobileMenu';
+import { navigationLinks } from '@/constans';
 
 const Header = () => {
 
@@ -11,14 +13,7 @@ const Header = () => {
         { href: "#", icon: <Instagram size={16} /> },
     ];
 
-    const navigationLinks = [
-        { href: "/", label: "Home" },
-        { href: "/about", label: "About" },
-        { href: "/hotels", label: "Hotel" },
-        { href: "/trips", label: "Trip" },
-        { href: "/rent-a-cars", label: "Rent a car" },
-        { href: "/contact", label: "Contact" },
-    ];
+   
 
     return (
         <header className='bg-black text-white'>
@@ -77,12 +72,11 @@ const Header = () => {
                          <div className="p-3 hidden lg:flex bg-orange-500 cursor-pointer text-white rounded-full">
                             <Search />
                         </div>
-                        <div className="p-3 bg-orange-500 cursor-pointer text-white rounded-full">
-                            <Menu />
-                        </div>
+                       
                         <div className="p-3 bg-sky-400 cursor-pointer text-white rounded-full">
                             <User />
                         </div>
+                        <MobileMenu/>
 
                     </div>
 
