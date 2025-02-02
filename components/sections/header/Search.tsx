@@ -4,6 +4,8 @@ import {
     DialogContent,
     DialogDescription,
     DialogHeader,
+    DialogOverlay,
+    DialogPortal,
     DialogTitle,
     DialogTrigger,
 } from "@/components/ui/dialog"
@@ -20,6 +22,8 @@ const SearchPage = () => {
                     <Search />
                 </div>
             </DialogTrigger>
+            <DialogPortal>
+                  <DialogOverlay />
             <DialogContent className='bg-transparent border-none shadow-none'>
                     <DialogTitle></DialogTitle>
                        
@@ -31,6 +35,7 @@ const SearchPage = () => {
                         
                        </div>
             </DialogContent>
+            </DialogPortal>
         </Dialog>
     )
 }
