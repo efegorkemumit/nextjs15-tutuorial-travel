@@ -70,3 +70,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.swiper-button-prev{
+  @apply text-orange-600 !important
+}
+.swiper-button-next{
+  @apply text-orange-600 !important
+}
