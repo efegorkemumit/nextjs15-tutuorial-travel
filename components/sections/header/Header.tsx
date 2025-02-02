@@ -4,6 +4,7 @@ import Link from 'next/link';
 import React from 'react'
 import MobileMenu from './MobileMenu';
 import { navigationLinks } from '@/constans';
+import SearchPage from './Search';
 
 const Header = () => {
 
@@ -69,9 +70,7 @@ const Header = () => {
                         ))}
                     </nav>
                     <div className='flex items-center space-x-4'>
-                         <div className="p-3 hidden lg:flex bg-orange-500 cursor-pointer text-white rounded-full">
-                            <Search />
-                        </div>
+                       <SearchPage/>
                        
                         <div className="p-3 bg-sky-400 cursor-pointer text-white rounded-full">
                             <User />
