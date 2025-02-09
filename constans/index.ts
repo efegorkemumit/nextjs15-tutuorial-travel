@@ -103,7 +103,7 @@ export const packages = [
 export const slides = [
     {
       image: "/slider/1.png",
-      title: "Uncovering Stories, One Trip At A Time",
+      title: "Uncovering Stories, One Trip At A Time ",
       description:
         "Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.",
       buttonText: "READ MORE",
@@ -117,7 +117,7 @@ export const slides = [
     },
     {
       image: "/slider/3.png",
-      title: "Find Your Next Adventure",
+      title: "Find Your Next Adventure Explore The World",
       description:
         "Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat.",
       buttonText: "START YOUR JOURNEY",
