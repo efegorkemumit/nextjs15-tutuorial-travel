@@ -2,6 +2,7 @@ import RecentProduct from "@/components/sections/recent/RecentProduct";
 import Image from "next/image";
 import Hero from "./_components/Hero/Hero";
 import SectionOne from "./_components/Section/SectionOne";
+import SectionTwo from "./_components/Section/SectionTwo";
 
 export default function Home() {
   return (
@@ -11,10 +12,11 @@ export default function Home() {
       <div className="min-h-24"></div>
 
       <SectionOne/>
-      <div className="min-h-96"></div>
+      <SectionTwo/>
+      <div className="min-h-24"></div>
       <RecentProduct/>
       
-      <div className="min-h-96"></div>
+      <div className="min-h-24"></div>
 
     </div>
   );
