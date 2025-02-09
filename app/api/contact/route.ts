@@ -8,7 +8,21 @@ const resend = new Resend(process.env.RESEND_API_KEY!);
 export async function POST(req: Request) {
 
     try {
-        const { name,  email,  message } = await req.json();
+        const { name,  email,  message, recaptcha } = await req.json();
+
+        const recaptchaResponse = await fetch(
+            `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${recaptcha}`,
+            { method: "POST" }
+          );
+          const recaptchaResult = await recaptchaResponse.json();
+      
+          if (!recaptchaResult.success) {
+            return NextResponse.json(
+              { message: "reCAPTCHA verification failed." },
+              { status: 400 }
+            );
+          }
+
 
         const emailResponse = await resend.emails.send({
             from: "onboarding@resend.dev", 
