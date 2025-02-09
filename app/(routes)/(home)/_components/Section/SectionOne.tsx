@@ -25,7 +25,7 @@ const SectionOne = () => {
          className='group overflow-hidden relative'
          initial="hidden"
          whileInView="visible"
-         viewport={{once:false, amount:0.2}}
+         viewport={{once:false, amount:0.4}}
          transition={{delay:0.1}}
          variants={fadeInVariants}
          custom={0}
@@ -44,7 +44,7 @@ const SectionOne = () => {
          className='group overflow-hidden relative'
          initial="hidden"
          whileInView="visible"
-         viewport={{once:false, amount:0.2}}
+         viewport={{once:false, amount:0.4}}
          transition={{delay:0.1}}
          variants={fadeInVariants}
          custom={1}
