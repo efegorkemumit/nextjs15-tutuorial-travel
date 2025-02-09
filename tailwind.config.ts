@@ -75,11 +75,17 @@ export default {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			"move-dot":{
+				"0%": { left: "0%" },
+				"50%": { left: "100%" },
+				"100%": { left: "0%" },
+			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			"move-dot":"move-dot 6s infinite linear"
   		}
   	}
   },
