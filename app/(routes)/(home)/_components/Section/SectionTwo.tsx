@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
 
 const SectionTwo = () => {
     return (
@@ -34,13 +35,26 @@ const SectionTwo = () => {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi numquam facere facilis rerum fugit eligendi assumenda, ea tempore dolore eius perferendis beatae quae deserunt cupiditate saepe iste delectus, maiores ex, dolorem ad. Suscipit recusandae praesentium fuga ipsa nihil dolore amet voluptatem odit, in animi possimus sint ut, velit omnis!
                 </p>
                 <div className="flex justify-center gap-4">
+                    <motion.div
+                        whileTap={{scale:0.9, y:80}}
+                        whileHover={{scale:1.6}}
+                    >
+
+                   
                     <Button className="bg-green-500 text-white py-6 px-8 rounded-lg hover:bg-green-600 transition">
                         Detail
                     </Button>
+                    </motion.div>
+
+                    <motion.div
+                        whileTap={{scale:0.9, rotate:-10}}
+                        whileHover={{scale:1.6, rotate:5}}
+                    >
+
                     <Button className="bg-orange-500 text-white py-6 px-8 rounded-lg hover:bg-orange-600 transition">
                         Browse
                     </Button>
-
+                    </motion.div>
 
                 </div>
 
