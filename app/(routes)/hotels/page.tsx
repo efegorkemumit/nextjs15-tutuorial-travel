@@ -1,8 +1,11 @@
 import React from 'react'
+import HotelList from './_components/hotelList'
 
 const HotelsPage = () => {
   return (
-    <div>HotelsPage</div>
+    <div>
+      <HotelList/>
+    </div>
   )
 }
 
