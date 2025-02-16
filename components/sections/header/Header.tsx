@@ -79,9 +79,9 @@ const Header = () => {
                     <div className='flex items-center space-x-4'>
                        <SearchPage/>
                        
-                        <div className="p-3 bg-sky-400 cursor-pointer text-white rounded-full">
+                        <Link  href="/login" className="p-3 bg-sky-400 cursor-pointer text-white rounded-full">
                             <User />
-                        </div>
+                        </Link>
                         <MobileMenu/>
 
                     </div>
