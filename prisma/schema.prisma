@@ -14,7 +14,7 @@ model User {
   photo          String
   firstName      String?
   lastName       String?
- 
+  hashedPassword String
 }
 
 model Hotel {
