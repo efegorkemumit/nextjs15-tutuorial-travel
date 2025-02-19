@@ -17,7 +17,7 @@ export const authOptions={
                     throw new Error("Missing email or password");
                 }
 
-                console.log("Checking if user exists...");
+                
 
                 const user = await prismadb.user.findUnique({ where: { email: credentials.email } });
 
@@ -25,7 +25,7 @@ export const authOptions={
                     throw new Error("No user found with this email.");
                 }
 
-                console.log("Comparing password...");
+                
 
                 const isPasswordValid = await bcrypt.compare(credentials.password, user.hashedPassword);
 
@@ -33,7 +33,7 @@ export const authOptions={
                     throw new Error("Incorrect password.");
                 }
 
-                console.log("Login successful:", user);
+                
                 return {
                     id: user.id,
                     email: user.email,

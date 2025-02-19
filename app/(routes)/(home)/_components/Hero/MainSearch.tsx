@@ -26,7 +26,7 @@ const MainSearch = () => {
 
   const handleSearch=()=>{
     const query = new URLSearchParams(formValues).toString();
-    console.log(query);
+    
     router.push(`/search?${query}`)
   }
 

@@ -63,7 +63,7 @@ const TripList = () => {
 
         url += "?" + params.toString();
 
-        console.log(url)
+        
 
         fetch(url)
             .then((res) => res.json())
@@ -72,7 +72,7 @@ const TripList = () => {
                 setLoading(false);
             })
             .catch((err) => {
-                console.error(err);
+                
                 setError(true);
                 setLoading(false);
             });

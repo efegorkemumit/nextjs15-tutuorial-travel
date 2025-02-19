@@ -61,7 +61,7 @@ const HotelList = () => {
             url += "?" + params.toString();
         }
 
-        console.log(url)
+        
 
         fetch(url)
             .then((res) => res.json())
@@ -70,7 +70,7 @@ const HotelList = () => {
                 setLoading(false);
             })
             .catch((err) => {
-                console.error(err);
+                
                 setError(true);
                 setLoading(false);
             });
@@ -85,7 +85,7 @@ const HotelList = () => {
 
     function onSubmit(values: FilterValues) {
         fetchHotels(values)
-        console.log(values)
+        
     }
 
 

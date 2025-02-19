@@ -50,7 +50,7 @@ const ContactForm = () => {
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
 
-        console.log(values)
+        
         try {
 
             const response = await fetch("/api/contact", {
@@ -64,7 +64,7 @@ const ContactForm = () => {
 
 
         } catch (error) {
-            console.error("Error:", error);
+            
         }
     }
 

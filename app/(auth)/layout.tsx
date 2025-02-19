@@ -14,7 +14,8 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
 
     const router = useRouter();
     const { data: session, status } = useSession();
-    console.log(status);
+
+        
 
     useEffect(()=>{
         if (status === "authenticated") {
